@@ -1,0 +1,56 @@
+$colors:(
+  button-1: #8490ff,
+  button-2: #62bdfc,
+  wht: #fff,
+  blck: #000,
+  texte: #777777,
+  title: #222222,
+  link: rgba(132, 144, 255, 1),
+  introduction: #faf9ff, 
+  banner-bg-1: #8490ff,
+  banner-bg-2: #62bdfc,
+  footer: #04091e
+);
+
+$font: "Poppins", sans-serif;
+
+
+body {
+  font-family: $font;
+}
+
+h1,h2,h3 {
+  color: map-get($colors, title);
+}
+
+
+p {
+  color: map-get($colors, texte);
+}
+
+
+.l-main-nav.is-active a:hover {
+  color: map-get($colors, link);
+}
+
+.l-main-nav .is-active {
+  color: map-get($colors, link);
+}
+
+.l-main-introduction,
+.l-main-posts .l-main-feedback,
+.l-background-color {
+  background-color: map-get($colors , "introduction" );
+}
+
+
+/*FOOTER*/
+footer{
+  background-color: map-get($colors, footer);
+  & h4 {
+    color: map-get($colors, wht);
+  }
+  & a {
+    color: map-get($colors, link);
+    }
+}
